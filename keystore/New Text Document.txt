@@ -1,0 +1,2 @@
+Keystore - C:\Users\HP\AndroidStudioProjects\PPFCompanionkeystore.jks
+password - shreya96

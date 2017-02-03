@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="4dp"
+    android:background="@color/recyclerview_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/textcolor">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_margin">
+
+            <TextView
+                android:id="@+id/MyPlanTitle"
+                android:text="@string/my_plan_title"
+                android:layout_height="@dimen/recycler_margin"
+                android:layout_width="@dimen/S75"
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/colorAccent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tiny_margin">
+
+            <TextView
+                android:id="@+id/StartYearTitle"
+                android:text="@string/start_year_title_my_plan"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/StartYear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tiny_margin">
+
+            <TextView
+                android:id="@+id/PpfModeMessageTitle"
+                android:text="@string/ppf_mode_title"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/PpfModeMessage"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tiny_margin">
+
+            <TextView
+                android:id="@+id/MaturityYearTitle"
+                android:text="@string/maturity_year"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/MaturityYear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tiny_margin">
+
+            <TextView
+                android:id="@+id/MaturityAmountTitle"
+                android:text="@string/maturity_amount"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/MaturityAmount"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:layout_width="0dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
