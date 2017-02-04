@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity
         calculate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Calculate");
-                bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Calculate");
-                bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "Button");
+                bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "CalculateAnalytics");
+                bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "CalculateAnalytics");
+                bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "myButton");
                 mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
                 Intent i = new Intent(MainActivity.this,PPFReport.class);
                 String amount = amount_deposited.getText().toString();
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity
                 amount_deposited.setText("");
                 Calendar calendar = Calendar.getInstance();
                 int year = calendar.get(Calendar.YEAR);
-                date.setText(year+"");
+                date.setText(year);
 
             }
         });
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
-        Toast.makeText(this,"Selected mode is " + adapterView.getItemAtPosition(i),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,getString(R.string.toast_mainActivity) + adapterView.getItemAtPosition(i),Toast.LENGTH_SHORT).show();
         ppfmode = adapterView.getItemAtPosition(i).toString();
     }
 
